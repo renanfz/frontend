@@ -1,4 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-let nome = 'javas';
-//# sourceMappingURL=script.js.map
+let nome = 'java';
+//# sourceMappingURL=teste.js.map
