@@ -18,24 +18,17 @@
      <div class="container flex justify-center">
           <div class="flex flex-col w-[95vw] items-center">
                <div class="">
-                    <h1 class="text-[23px] font-medium text-blue-500 mx-auto m-2.5">Task Manager</h1>
-                    <div class="mb-5">
+                    <h1 class="text-[23px] font-medium text-blue-500 text-center m-2.5">Task Manager</h1>
+                    <div class="mb-5 w-full ">
                          <input class="border-2 border-blue-500 rounded-md p-0.5 indent-1.5" type="text"
-                              placeholder="Sua tarefa">
-                         <button class="bg-blue-500 text-white rounded-md py-1 px-2">Add Task</button>
+                              placeholder="Sua tarefa" id="fieldTask">
+                         <button class="bg-blue-500 text-white rounded-md py-1 px-2" id="btnAddTask">Add Task</button>
                     </div>
                </div>
-               <div class="flex flex-row w-full justify-between p-2 border-1 border-gray-500">
-                    <input type="checkbox" id="">
-                    <p class="">Ir para a faculdade</p>
-                    <button class="">Remover</button>
-
-               </div>
-               <div class="grid grid-cols-[25px_4fr_1fr] w-full place-content-between p-2 border-1 border-gray-500">
-                    <input class="" type="checkbox" id="">
+               <div class="grid grid-cols-[25px_4fr_1fr] w-full place-content-between items-center p-2 border-1 border-gray-400 rounded-md drop-shadow-[1px_1px_0px_rgba()]">
+                    <input class="h-5" type="checkbox" id="checkTask">
                     <p class="pl-2.5">Ir para a faculdade</p>
-                    <button class="bg-gray-300">Remover</button>
-
+                    <button class="bg-gray-300 rounded-md" id="btnRemove">Remover</button>
                </div>
           </div>
 
