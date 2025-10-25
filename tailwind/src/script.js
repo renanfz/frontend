@@ -13,18 +13,18 @@ function createCardTask(arr, list, field) {
     list.appendChild(card)                
 }
 
-function remove(index) {
-    let btnRemove = document.getElementById('btnRemove')
-}
-
 // Events
+
+document.getElementById('fieldTask').addEventListener('keyup', (e) => {
+    if(e.key === 'Enter') {btnAddTask.click()}
+})
+
 btnAddTask.addEventListener('click', () => {
     let fieldValue = document.getElementById('fieldTask')
     if(fieldValue.value.trim() !== '') {
         createCardTask(arrTasks, listTasks, fieldValue.value)
         fieldValue.value = ''
         fieldValue.focus()
-        alert(arrTasks)
     } else {
         fieldValue.placeholder = 'Ops! Preencha esse campo primeiro' 
         fieldValue.style.color = 'red'
@@ -39,10 +39,10 @@ document.getElementById('fieldTask').addEventListener('keyup', function() {
 
 listTasks.addEventListener('click', (event) => {
   const div = event.target.closest('div[data-index]');
-  const index = div.dataset.index
-  if (div) {
-    div.remove
-    alert(index)
-  }
+  const btn = div.querySelector('button')
+
+  btn.addEventListener('click', ()=> {
+    div.remove()
+  })
 });
 

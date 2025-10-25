@@ -1,19 +1,12 @@
 <!doctype html>
 <html>
-
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>TAsk</title>
      <link href="./output.css" rel="stylesheet">
-     <style>
-          * {
-               box-sizing: border-box;
-               outline: none;
-          }
-     </style>
+     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
      <div class="container flex justify-center">
           <div class="flex flex-col w-[95vw] items-center">
@@ -22,7 +15,7 @@
                     <h1 class="text-[23px] font-medium text-blue-500 text-center m-2.5">Task Manager</h1>
                     <div class="flex justify-between mb-5 w-full ">
                          <input class="border-2 border-blue-500 rounded-md p-0.5 indent-1.5 w-[82%] h-9 " type="text"
-                              placeholder="Sua tarefa" id="fieldTask">
+                              placeholder="Sua tarefa" autocomplete="off" id="fieldTask">
                          <button class="bg-blue-500 text-white rounded-md py-1 px-2" id="btnAddTask">Add Task</button>
                     </div>
                </div>
